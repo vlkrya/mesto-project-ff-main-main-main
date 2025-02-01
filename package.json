@@ -1,15 +1,19 @@
 {
   "name": "mesto-project-ff-main-main",
   "version": "1.0.0",
-  "description": "https://github.com/vlkrya/mesto-project-ff-main",
+  "description": "Проект Mesto на Webpack с деплоем на GitHub Pages",
+  "homepage": "https://vlkrya.github.io/mesto-project-ff-main-main-main",
   "main": "index.js",
   "scripts": {
+    "start": "webpack serve --mode development",
     "build": "webpack --mode production",
-    "dev": "webpack serve"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "dependencies": {},
   "devDependencies": {
     "@babel/core": "^7.26.0",
     "@babel/preset-env": "^7.26.0",
@@ -19,6 +23,7 @@
     "css-loader": "^7.1.2",
     "cssnano": "^7.0.6",
     "file-loader": "^6.2.0",
+    "gh-pages": "^6.3.0",
     "html-webpack-plugin": "^5.6.3",
     "mini-css-extract-plugin": "^2.9.2",
     "postcss": "^8.4.49",
@@ -28,5 +33,9 @@
     "webpack": "^5.96.1",
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^5.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vlkrya/mesto-project-ff-main-main-main.git"
   }
 }
